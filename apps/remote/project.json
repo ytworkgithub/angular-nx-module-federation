@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/remote",
         "index": "apps/remote/src/index.html",
@@ -14,8 +16,13 @@
         "polyfills": "apps/remote/src/polyfills.ts",
         "tsConfig": "apps/remote/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/remote/src/favicon.ico", "apps/remote/src/assets"],
-        "styles": ["apps/remote/src/styles.scss"],
+        "assets": [
+          "apps/remote/src/favicon.ico",
+          "apps/remote/src/assets"
+        ],
+        "styles": [
+          "apps/remote/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -80,7 +87,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/remote"],
+      "outputs": [
+        "coverage/apps/remote"
+      ],
       "options": {
         "jestConfig": "apps/remote/jest.config.js",
         "passWithNoTests": true
