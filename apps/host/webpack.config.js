@@ -29,17 +29,16 @@ module.exports = {
         library: { type: "module" },
 
         // For remotes (please adjust)
-        // name: "host",
-        // filename: "remoteEntry.js",
+        name: "host",
+        filename: "remoteEntry.js",
         // exposes: {
         //     './Component': './apps/host/src/app/app.component.ts',
         // },        
         
         // For hosts (please adjust)
-        // remotes: {
-        //     "remote": "http://localhost:4200/remoteEntry.js",
-
-        // },
+        remotes: {
+          "remote": "http://localhost:4201/remoteEntry.js",
+        },
 
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
