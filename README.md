@@ -1,4 +1,12 @@
+# Steps to reproduce `nx` module federation creation
 
+## `nx` workspace creation
+
+`npx create-nx-workspace angular-nx-module-federation` (Will be created a new workspace `angular-nx-module-federation`. When it asks you what type of workspace you want use, choose `angular` and name angular application as `host`)
+
+`nx generate @nrwl/angular:app remote` (to generate a new angular project in the `nx` workspace)
+
+## module federation configuration
 
 # AngularNxMfWorkspace
 
