@@ -11,7 +11,7 @@ sharedMappings.register(
 module.exports = {
   output: {
     uniqueName: "remote",
-    publicPath: "auto"
+    publicPath: "http://localhost:4201/"
   },
   optimization: {
     runtimeChunk: false
@@ -33,6 +33,7 @@ module.exports = {
         filename: "remoteEntry.js",
         exposes: {
             './Header': './apps/remote/src/app/header/header.component.ts',
+            './AsdModule': './apps/remote/src/app/asd/asd.module.ts'
         },        
         
         // For hosts (please adjust)

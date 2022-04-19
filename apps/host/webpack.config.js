@@ -11,7 +11,7 @@ sharedMappings.register(
 module.exports = {
   output: {
     uniqueName: "host",
-    publicPath: "auto"
+    publicPath: "http://localhost:4200/"
   },
   optimization: {
     runtimeChunk: false
